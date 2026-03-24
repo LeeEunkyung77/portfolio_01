@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>베이비앤토이-상품목록</title>
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/common.css" type="text/css">
+  <link rel="stylesheet" href="css/sub.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $('.gnb>ul>li').hover(function(){
+        $(this).find('.sub_menu').stop().slideToggle()
+      })
+      $('.controls ul li').each(function(index){
+        $(this).click(function(){
+          $('.banner_img').animate({left:-index*100+'%'})
+          $('.top_text li').eq(index).fadeIn().siblings().fadeOut()
+          $(this).addClass('select').siblings().removeClass()
+        })
+      })
+    })
+
+  </script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+  <header id="header">
+    <div class="header_inner">
+      <div class="header_top">
+        <div class="util_left">
+          <ul>
+            <li><a href="">자주묻는질문과답변</a></li>
+            <li><a href="">상품후기</a></li>
+            <li><a href="">상품문의</a></li>
+          </ul>
+        </div>
+        <div class="util_right">
+          <ul>
+            <li><a href="">로그인</a></li>
+            <li><a href="join_agree.html">회원가입</a></li>
+            <li><a href="">내정보</a></li>
+            <li><a href="cart.html">장바구니</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header_mid">
+      <div class="mid_inner">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="img/main_icon_color.png" alt="베이비앤토이">
+          </a>
+          <a href="index.html">베이비앤토이</a>
+        </h1>
+        <div class="header_search">
+          <input type="text" id="searchForm" name="keyword" class="search">
+          <a href=""><img src="img/search_icon.png" alt="검색"></a>
+        </div>
+      </div>
+    </div>
+      <nav class="gnb">
+        <ul>
+          <li><a href="product.html">연령별 분류</a>
+            <ul class="sub_menu">
+              <li><a href="product.html">전체보기</a></li>
+              <li><a href="product.html">0개월 이상</a></li>
+              <li><a href="product.html">5개월 이상</a></li>
+              <li><a href="product.html">11개월 이상</a></li>
+              <li><a href="product.html">15개월 이상</a></li>
+            </ul>
+          </li>
+          <li><a href="#">품목별 분류</a>
+            <ul class="sub_menu">
+              <li><a href="">전체보기</a></li>
+              <li><a href="">침대/바운서/스윙</a></li>
+              <li><a href="">쏘서/점퍼루/보행기</a></li>
+              <li><a href="">카시트/유모차/식탁의자</a></li>
+              <li><a href="">미끄럼/주방놀이/놀이집</a></li>
+              <li><a href="">자동차/그네/시소</a></li>
+              <li><a href="">묶음/패키지 상품</a></li>
+              <li><a href="">중고 장난감 판매</a></li>
+            </ul>
+          </li>
+          <li><a href="#">이용안내</a></li>
+          <li><a href="#">소통마당</a>
+            <ul class="sub_menu">
+              <li><a href="">공지사항</a></li>
+              <li><a href="">자주묻는 질문과 답변</a></li>
+              <li><a href="">상품문의</a></li>
+              <li><a href="">상품후기</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <section id="productTop">
+    <h2>연령별 분류</h2>
+    <div class="sub_name">
+      <ul>
+        <li><a href="">전체보기</a></li>
+        <li><a href="">0개월 이상</a></li>
+        <li><a href="">5개월 이상</a></li>
+        <li><a href="">11개월 이상</a></li>
+        <li><a href="">15개월 이상</a></li>
+      </ul>
+    </div>
+    <div class="pd_util">
+      <p class="pd_cnt">전체 <span class="all_num">21</span>개의 상품이 있습니다.</p>
+      <ul>
+        <li><a href="">추천순</a></li>
+        <li><a href="">인기순</a></li>
+        <li><a href="">낮은가격순</a></li>
+        <li><a href="">높은가격순</a></li>
+        <li><a href="">상품평순</a></li>
+      </ul>
+    </div>
+  </section>
+  </section>
+  <section id="productList">
+    <ul>
+      <li>
+        <a href="detail.html" class="pd_img">
+          <img src="img/best0_0.jpg" alt="">
+        </a>
+        <div class="pd_info">
+          <div class="pd_text">
+            <h3>아기 타이니모빌 동물 세트</h3>
+            <h4>0개월 이상</h4>
+            <p class="price">12,000원</p>
+          </div>
+          <a href="cart.html" class="cart_btn">
+            <img src="img/cart_control.png" alt="">
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="detail.html" class="pd_img">
+          <img src="img/product_mb_01.jpg" alt="">
+        </a>
+        <div class="pd_info">
+          <div class="pd_text">
+            <h3>디즈니베이비 캐릭터 멜로디 모빌</h3>
+            <h4>0개월 이상</h4>
+            <p class="price">25,000원</p>
+          </div>
+          <a href="cart.html" class="cart_btn">
+            <img src="img/cart_control.png" alt="">
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="detail.html" class="pd_img">
+          <img src="img/product_mb_02.jpg" alt="">
+        </a>
+        <div class="pd_info">
+          <div class="pd_text">
+            <h3>아기 침대 수동 동물 도형 인형 모빌</h3>
+            <h4>0개월 이상</h4>
+            <p class="price">12,000원</p>
+          </div>
+          <a href="cart.html" class="cart_btn">
+            <img src="img/cart_control.png" alt="">
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="detail.html" class="pd_img">
+          <img src="img/product_c_01.jpg" alt="">
+        </a>
+        <div class="pd_info">
+          <div class="pd_text">
+            <h3>세이지폴 범보의자+이너시트 세트</h3>
+            <h4>0개월 이상</h4>
+            <p class="price">15,000원</p>
+          </div>
+          <a href="cart.html" class="cart_btn">
+            <img src="img/cart_control.png" alt="">
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="detail.html" class="pd_img">
+          <img src="img/product_c_02.jpg" alt="">
+        </a>
+        <div class="pd_info">
+          <div class="pd_text">
+            <h3>젤리맘 무나범보의자 프렌즈</h3>
+            <h4>0개월 이상</h4>
+            <p class="price">15,000원</p>
+          </div>
+          <a href="cart.html" class="cart_btn">
+            <img src="img/cart_control.png" alt="">
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="detail.html" class="pd_img">
+          <img src="img/product_b_01.jpg" alt="">
+        </a>
+        <div class="pd_info">
+          <div class="pd_text">
+            <h3>신생아 흔들 의자 수면 요람 침대</h3>
+            <h4>0개월 이상</h4>
+            <p class="price">18,000원</p>
+          </div>
+          <a href="cart.html" class="cart_btn">
+            <img src="img/cart_control.png" alt="">
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="detail.html" class="pd_img">
+          <img src="img/product_b_02.jpg" alt="">
+        </a>
+        <div class="pd_info">
+          <div class="pd_text">
+            <h3>인제뉴어티 컴포트스윙 켄드릭</h3>
+            <h4>0개월 이상</h4>
+            <p class="price">22,000원</p>
+          </div>
+          <a href="cart.html" class="cart_btn">
+            <img src="img/cart_control.png" alt="">
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="detail.html" class="pd_img">
+          <img src="img/product_b_03.jpg" alt="">
+        </a>
+        <div class="pd_info">
+          <div class="pd_text">
+            <h3>네무리라 신생아 바운서[전자동]</h3>
+            <h4>0개월 이상</h4>
+            <p class="price">36,000원</p>
+          </div>
+          <a href="cart.html" class="cart_btn">
+            <img src="img/cart_control.png" alt="">
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="detail.html" class="pd_img">
+          <img src="img/product_j_01.jpg" alt="">
+        </a>
+        <div class="pd_info">
+          <div class="pd_text">
+            <h3>뽀로로 발차기 드럼 체육관</h3>
+            <h4>0개월 이상</h4>
+            <p class="price">25,000원</p>
+          </div>
+          <a href="cart.html" class="cart_btn">
+            <img src="img/cart_control.png" alt="">
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="detail.html" class="pd_img">
+          <img src="img/product_j_02.jpg" alt="">
+        </a>
+        <div class="pd_info">
+          <div class="pd_text">
+            <h3>피셔프라이스 발차기 피아노 체육관</h3>
+            <h4>0개월 이상</h4>
+            <p class="price">23,000원</p>
+          </div>
+          <a href="cart.html" class="cart_btn">
+            <img src="img/cart_control.png" alt="">
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="detail.html" class="pd_img">
+          <img src="img/product_m_01.jpg" alt="">
+        </a>
+        <div class="pd_info">
+          <div class="pd_text">
+            <h3>자장가 램프 운전놀이 핸들</h3>
+            <h4>0개월 이상</h4>
+            <p class="price">10,000원</p>
+          </div>
+          <a href="cart.html" class="cart_btn">
+            <img src="img/cart_control.png" alt="">
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="detail.html" class="pd_img">
+          <img src="img/product_m_02.jpg" alt="">
+        </a>
+        <div class="pd_info">
+          <div class="pd_text">
+            <h3>멜로디 나비 장난감</h3>
+            <h4>0개월 이상</h4>
+            <p class="price">10,000원</p>
+          </div>
+          <a href="cart.html" class="cart_btn">
+            <img src="img/cart_control.png" alt="">
+          </a>
+        </div>
+      </li>
+    </ul>
+    <div class="circle"></div>
+  </section>
+  <div class="pdBottom">
+    <ul class="num">
+      <li><a href="product.html">1</a></li>
+      <li><a href="product.html">2</a></li>
+      <!-- <li><a href="product.html">3</a></li>
+      <li><a href="product.html">4</a></li>
+      <li><a href="product.html">5</a></li>
+      <li><a href="product.html">6</a></li> -->
+    </ul>
+    <div class="num_btn">
+      <a href="" class="num_left">
+        <img src="img/🦆 icon _chevron left_.png" alt="">
+      </a>
+      <a href="" class="num_right">
+        <img src="img/🦆 icon _chevron right_.png" alt="">
+      </a>
+    </div>
+  </div>
+  <section id="top_btn">
+    <a href=""><img src="img/top_btn.png" alt=""></a>
+  </section>
+  <footer id="footer">
+    <nav class="fnb">
+      <ul>
+        <li><a href="">회사소개</a></li>
+        <li><a href="">이용약관</a></li>
+        <li><a href="">개인정보처리방침</a></li>
+        <li><a href="">이용안내</a></li>
+      </ul>
+    </nav>
+    <div class="foot_inner">
+      <address><pre>
+상호 : 장안장난감대여점          대표 : 한상임          사업자등록번호 : 135-04-86296
+통신판매업신고번호 : 2000-경기수원-0412호       <a href="">[사업자정보확인]</a>
+대표번호 : 031-245-6468        이메일 : dkidi@naver.com
+주소 : 경기도 수원시 장안구 경수대로847번길 8 삼원빌딩 지하
+개인정보관리자 : 모철홀
+호스팅제공 : 엔에이치엔고도(주)</pre>
+        <p>copyright ⓒ www.babyntoy.com all rights reserved.</p>
+      </address>
+      <div class="call">
+        <h4>고객센터</h4>
+        <p>031.245.6468</p>
+      </div>
+      <div class="bank">
+        <p>입금계좌안내</p>
+        <p>우리은행 452-001410-12-100</p>
+        <p>예금주 : 한상임</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

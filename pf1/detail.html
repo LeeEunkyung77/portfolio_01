@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>베이비앤토이-상세페이지</title>
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/common.css" type="text/css">
+  <link rel="stylesheet" href="css/sub.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $('.gnb>ul>li').hover(function(){
+        $(this).find('.sub_menu').stop().slideToggle()
+      })
+      $('.controls ul li').each(function(index){
+        $(this).click(function(){
+          $('.banner_img').animate({left:-index*100+'%'})
+          $('.top_text li').eq(index).fadeIn().siblings().fadeOut()
+          $(this).addClass('select').siblings().removeClass()
+        })
+      })
+    })
+
+  </script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+  <header id="header">
+    <div class="header_inner">
+      <div class="header_top">
+        <div class="util_left">
+          <ul>
+            <li><a href="">자주묻는질문과답변</a></li>
+            <li><a href="">상품후기</a></li>
+            <li><a href="">상품문의</a></li>
+          </ul>
+        </div>
+        <div class="util_right">
+          <ul>
+            <li><a href="">로그인</a></li>
+            <li><a href="join_agree.html">회원가입</a></li>
+            <li><a href="">내정보</a></li>
+            <li><a href="cart.html">장바구니</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header_mid">
+      <div class="mid_inner">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="img/main_icon_color.png" alt="베이비앤토이">
+          </a>
+          <a href="index.html">베이비앤토이</a>
+        </h1>
+        <div class="header_search">
+          <input type="text" id="searchForm" name="keyword" class="search">
+          <a href=""><img src="img/search_icon.png" alt="검색"></a>
+        </div>
+      </div>
+    </div>
+      <nav class="gnb">
+        <ul>
+          <li><a href="product.html">연령별 분류</a>
+            <ul class="sub_menu">
+              <li><a href="product.html">전체보기</a></li>
+              <li><a href="product.html">0개월 이상</a></li>
+              <li><a href="product.html">5개월 이상</a></li>
+              <li><a href="product.html">11개월 이상</a></li>
+              <li><a href="product.html">15개월 이상</a></li>
+            </ul>
+          </li>
+          <li><a href="#">품목별 분류</a>
+            <ul class="sub_menu">
+              <li><a href="">전체보기</a></li>
+              <li><a href="">침대/바운서/스윙</a></li>
+              <li><a href="">쏘서/점퍼루/보행기</a></li>
+              <li><a href="">카시트/유모차/식탁의자</a></li>
+              <li><a href="">미끄럼/주방놀이/놀이집</a></li>
+              <li><a href="">자동차/그네/시소</a></li>
+              <li><a href="">묶음/패키지 상품</a></li>
+              <li><a href="">중고 장난감 판매</a></li>
+            </ul>
+          </li>
+          <li><a href="#">이용안내</a></li>
+          <li><a href="#">소통마당</a>
+            <ul class="sub_menu">
+              <li><a href="">공지사항</a></li>
+              <li><a href="">자주묻는 질문과 답변</a></li>
+              <li><a href="">상품문의</a></li>
+              <li><a href="">상품후기</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <section id="contents" class="detail">
+    <div class="detail_top">
+      <div class="detail_img">
+        <img src="img/product_c_02.jpg" alt="">
+      </div>
+      <div class="detail_wrap">
+        <h2>[대여] 젤리맘 무나범보의자 프렌즈</h2>
+        <h3>6개월 이상</h3>
+        <div class="price">
+          <p>판매가</p>
+          <p>15,000 원</p>
+        </div>
+        <form>
+          <table class="detail_info">
+            <tr>
+              <th>구매제한</th>
+              <td>최소 1개</td>
+            </tr>
+            <tr>
+              <th>배송비</th>
+              <td>4,000원 &nbsp; / &nbsp; 주문시결제(선결제)</td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>직접배송 및 회수</td><!--2줄-->
+            </tr>
+            <tr>
+              <th>배송방법</th>
+              <td>직접배송</td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>(수원, 인천인근 지역 직접 배송)</td>
+            </tr>
+            <tr>
+              <th>상품재고</th>
+              <td><span>4</span>개</td>
+            </tr>
+            <tr>
+              <th>대여기간</th>
+              <td>
+                <label for="choice"></label>
+                <select name="" id="choice">
+                  <option value="" disabled selected class="color_gray" style="color:#dddddd">대여기간을 선택하세요. (옵션 : 가격 : 재고 순)</option>
+                  <option value="0">1개월  +0원  2개</option>
+                  <option value="1">2개월  +11,000원  1개</option>
+                  <option value="2">3개월  +21,000원  0개</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+        </form>
+        <div class="btn">
+          <a href="cart.html" id="btn_white">장바구니</a>
+          <a href="">바로 구매</a><!--id="btn_yellow"-->
+        </div>
+      </div>
+    </div>
+    <div id="detail_bottom1" class="detail_bottom">
+      <ul>
+        <li></li>
+        <li><a href="#detail_bottom1">상품상세정보</a></li>
+        <li><a href="#detail_bottom2">배송안내</a></li>
+        <li><a href="#detail_bottom3">교환 및 반품안내</a></li>
+        <li><a href="#detail_bottom4">상품후기<span class="com_cnt">2</span></a></li>
+        <li><a href="#detail_bottom5">상품문의<span class="q_cnt">14</span></a></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="explain">
+      <h2>상품상세정보</h2>
+      <div class="explain_img">
+        <img src="img/explain.jpg" alt="">
+      </div>
+    </div>
+    <div id="detail_bottom2" class="detail_bottom">
+      <ul>
+        <li></li>
+        <li><a href="#detail_bottom1">상품상세정보</a></li>
+        <li><a href="#detail_bottom2">배송안내</a></li>
+        <li><a href="#detail_bottom3">교환 및 반품안내</a></li>
+        <li><a href="#detail_bottom4">상품후기<span class="com_cnt">2</span></a></li>
+        <li><a href="#detail_bottom5">상품문의<span class="q_cnt">14</span></a></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="explain explain2">
+      <h2>배송안내</h2>
+      <pre>
+        <p>
+<span>[배송안내]</span>
+◈ 저희업체는 택배 배송업무를 하지않고 있습니다.(직접배송위주로 합니다)
+
+◈ 직접배송 지역은 쇼핑몰 운영자가 직접배송,조립 및 회수해 드립니다
+
+
+- 직접배송지역 -
+수원/용인(수지.죽전.기흥구)/분당/군포/안양/의왕/과천/광명
+화성(병점.동탄)/안산/오산
+
+◈ 배송료는 수원인근지역은 25,000원이상 주문시 무료배송, 25,000원미만 5천원 부가되고 15,000원 이하 주문은 받지 않습니다
+
+(직접배송지역외 인근지역일부 배송시는 3만원이상 직접배송가능여부 확인후 배송비를 1만원~2만원까지 추가로 받을 수 있습니다.)
+
+◈ 일반적으로 배송기간은 입금확인일로부터 1~3일이 소요됩니다.
+※ 단, 토요일, 일요일(공휴일 포함)의 경우에는 휴무로 인하여 2~3일의 배송지연이 예상되오니 참고하시기 바랍니다.
+
+◈ 모든 주문은 고객께서 선택하신 방법으로 결제를 하시고, 해당 주문번호에 대한 입금확인을 끝내야 발송준비가 시작됩니다.
+        </p>
+      </pre>
+    </div>
+    <div id="detail_bottom3" class="detail_bottom">
+      <ul>
+        <li></li>
+        <li><a href="#detail_bottom1">상품상세정보</a></li>
+        <li><a href="#detail_bottom2">배송안내</a></li>
+        <li><a href="#detail_bottom3">교환 및 반품안내</a></li>
+        <li><a href="#detail_bottom4">상품후기<span class="com_cnt">2</span></a></li>
+        <li><a href="#detail_bottom5">상품문의<span class="q_cnt">14</span></a></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="explain explain3">
+      <h2>교환 및 반품안내</h2>
+      <pre>
+        <p>
+<span>[교환 및 반품안내]</span>
+- 대여업의 특성상 일정기간 사용 후 교환 불가합니다.
+
+- 대여개시 2~3일내에 낙상등으로 안전에 위험이 있을 경우 교환을 할 수 있으며, 대여상품 및 대여장소에 따라 교환료(5천원~만원)가 부가됩니다.
+
+
+<span>[환불안내]</span>
+◈ 대여업의 특성상 교환및 반품은 불가합니다..
+
+* 1회대여료는(방문.세척.수거 )횟수가 동일하므로.1개월 대여료와 동일함으로 조기 반납 하여도 환불을 불가 합니다
+(단. 2개월에서 1개월로 조기 반납시는 1개월 단위로 계산하여 차후사용가능)
+
+
+<span>[AS안내]</span>
+- 대여중 발생된 부품파손 및 부속품 분실은 판매사의 AS부품 구입비의 해당금액을 청구합니다.
+
+- 대여중 발생된 A/S는 당사에 문의하시기 바랍니다.
+        </p>
+      </pre>
+    </div>
+    <div id="detail_bottom4" class="detail_bottom">
+      <ul>
+        <li></li>
+        <li><a href="#detail_bottom1">상품상세정보</a></li>
+        <li><a href="#detail_bottom2">배송안내</a></li>
+        <li><a href="#detail_bottom3">교환 및 반품안내</a></li>
+        <li><a href="#detail_bottom4">상품후기<span class="com_cnt">2</span></a></li>
+        <li><a href="#detail_bottom5">상품문의<span class="q_cnt">14</span></a></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="explain explain4">
+      <h2>상품후기</h2>
+      <div class="ex_btn">
+        <a href="">상품후기 전체보기</a>
+        <a href="">상품후기 글쓰기</a>
+      </div>
+    </div>
+    <div class="ex_list ex4_list">
+      <ul>
+        <li>
+          <div class="info_img">
+            <img src="img/star.png" alt="">
+          </div>
+          <a href="">
+            <div class="ex_title ex4_title">
+              <h3>상태도 좋고 너무 귀엽네요!</h3>
+              <div class="clip_img">
+                <img src="img/clip.png" alt="">
+              </div>
+            </div>
+          </a>
+          <p>d***</p>
+          <p>2023.04.12</p>
+        </li>
+        <li>
+          <div class="info_img">
+            <img src="img/star.png" alt="">
+          </div>
+          <a href="">
+            <div class="ex_title ex4_title">
+              <h3>젤리맘 무나범보의자 상태 나쁘지 않아요~</h3>
+              <div class="clip_img">
+                <img src="" alt="">
+              </div>
+            </div>
+          </a>
+          <p>i***</p>
+          <p>2023.04.14</p>
+        </li>
+      </ul>
+    </div>
+    <div class="ex_num">
+      <ul class="num">
+        <li><a href="">1</a></li>
+      </ul>
+      <div class="num_btn num_btn4">
+        <a href="" class="num_left">
+          <img src="img/🦆 icon _chevron left_.png" alt="">
+        </a>
+        <a href="" class="num_right">
+          <img src="img/🦆 icon _chevron right_.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div id="detail_bottom5" class="detail_bottom">
+      <ul>
+        <li></li>
+        <li><a href="#detail_bottom1">상품상세정보</a></li>
+        <li><a href="#detail_bottom2">배송안내</a></li>
+        <li><a href="#detail_bottom3">교환 및 반품안내</a></li>
+        <li><a href="#detail_bottom4">상품후기<span class="com_cnt">2</span></a></li>
+        <li><a href="#detail_bottom5">상품문의<span class="q_cnt">14</span></a></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="explain explain5">
+      <h2>상품문의</h2>
+      <div class="ex_btn">
+        <a href="">상품문의 전체보기</a>
+        <a href="">상품문의 글쓰기</a>
+      </div>
+    </div>
+    <div class="ex_list ex5_list">
+      <ul>
+        <li>
+          <p>14</p>
+          <a href="">
+            <div class="ex_title ex5_title">
+              <div class="lock_img">
+                <img src="img/lock.png" alt="">
+              </div>
+              <h3>새 상품 혹시 있나요</h3>
+            </div>
+          </a>
+          <p>z***</p>
+          <p>2023.04.14</p>
+          <p>답변대기</p>
+        </li>
+        <li>
+          <p>13</p>
+          <a href="">
+            <div class="ex_title ex5_title">
+              <div class="lock_img">
+                <img src="img/lock.png" alt="">
+              </div>
+              <h3>문의</h3>
+            </div>
+          </a>
+          <p>d***</p>
+          <p>2023.04.14</p>
+          <p>답변대기</p>
+        </li>
+        <li>
+          <p>12</p>
+          <a href="">
+            <div class="ex_title ex5_title">
+              <div class="lock_img">
+                <img src="img/lock.png" alt="">
+              </div>
+              <h3>대여 문의</h3>
+            </div>
+          </a>
+          <p>l***</p>
+          <p>2023.04.14</p>
+          <p>답변대기</p>
+        </li>
+        <li>
+          <p>11</p>
+          <a href="">
+            <div class="ex_title ex5_title">
+              <div class="lock_img">
+                <img src="img/lock.png" alt="">
+              </div>
+              <h3>반납 문의</h3>
+            </div>
+          </a>
+          <p>v***</p>
+          <p>2023.04.12</p>
+          <p class="ok">답변완료</p>
+        </li>
+        <li>
+          <p>10</p>
+          <a href="">
+            <div class="ex_title ex5_title">
+              <div class="lock_img">
+                <img src="img/lock.png" alt="">
+              </div>
+              <h3>언제 입고 될까요?</h3>
+            </div>
+          </a>
+          <p>n***</p>
+          <p>2023.04.12</p>
+          <p class="ok">답변완료</p>
+        </li>
+        <li>
+          <p>9</p>
+          <a href="">
+            <div class="ex_title ex5_title">
+              <div class="lock_img">
+                <img src="img/lock.png" alt="">
+              </div>
+              <h3>배송 문의</h3>
+            </div>
+          </a>
+          <p>w***</p>
+          <p>2023.04.12</p>
+          <p class="ok">답변완료</p>
+        </li>
+        <li>
+          <p>8</p>
+          <a href="">
+            <div class="ex_title ex5_title">
+              <div class="lock_img">
+                <img src="img/lock.png" alt="">
+              </div>
+              <h3>상품 및 배송 문의</h3>
+            </div>
+          </a>
+          <p>q***</p>
+          <p>2023.04.12</p>
+          <p class="ok">답변완료</p>
+        </li>
+        <li>
+          <p>7</p>
+          <a href="">
+            <div class="ex_title ex5_title">
+              <div class="lock_img">
+                <img src="img/lock.png" alt="">
+              </div>
+              <h3>배송</h3>
+            </div>
+          </a>
+          <p>h***</p>
+          <p>2023.04.12</p>
+          <p class="ok">답변완료</p>
+        </li>
+        <li>
+          <p>6</p>
+          <a href="">
+            <div class="ex_title ex5_title">
+              <div class="lock_img">
+                <img src="img/lock.png" alt="">
+              </div>
+              <h3>반납 문의</h3>
+            </div>
+          </a>
+          <p>g***</p>
+          <p>2023.04.12</p>
+          <p class="ok">답변완료</p>
+        </li>
+        <li>
+          <p>5</p>
+          <a href="">
+            <div class="ex_title ex5_title">
+              <div class="lock_img">
+                <img src="img/lock.png" alt="">
+              </div>
+              <h3>대여 가능한가요?</h3>
+            </div>
+          </a>
+          <p>e***</p>
+          <p>2023.04.12</p>
+          <p class="ok">답변완료</p>
+        </li>
+      </ul>
+    </div>
+    <div class="ex_num">
+      <ul class="num">
+        <li><a href="">1</a></li>
+        <li><a href="">2</a></li>
+      </ul>
+      <div class="num_btn num_btn5">
+        <a href="" class="num_left">
+          <img src="img/🦆 icon _chevron left_.png" alt="">
+        </a>
+        <a href="" class="num_right">
+          <img src="img/🦆 icon _chevron right_.png" alt="">
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="top_btn">
+    <a href="#header"><img src="img/top_btn.png" alt=""></a>
+  </section>
+  <footer id="footer">
+    <nav class="fnb">
+      <ul>
+        <li><a href="">회사소개</a></li>
+        <li><a href="">이용약관</a></li>
+        <li><a href="">개인정보처리방침</a></li>
+        <li><a href="">이용안내</a></li>
+      </ul>
+    </nav>
+    <div class="foot_inner">
+      <address><pre>
+상호 : 장안장난감대여점          대표 : 한상임          사업자등록번호 : 135-04-86296
+통신판매업신고번호 : 2010-경기수원-0412호       <a href="">[사업자정보확인]</a>
+대표번호 : 031-245-6468        이메일 : dkidi@naver.com
+주소 : 경기도 수원시 장안구 경수대로847번길 8 삼원빌딩 지하
+개인정보관리자 : 모철홀
+호스팅제공 : 엔에이치엔고도(주)</pre>
+        <p>copyright ⓒ www.babyntoy.com all rights reserved.</p>
+      </address>
+      <div class="call">
+        <h3>고객센터</h3>
+        <p>031.245.6468</p>
+      </div>
+      <div class="bank">
+        <p>입금계좌안내</p>
+        <p>우리은행 452-011410-12-101</p>
+        <p>예금주 : 한상임</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

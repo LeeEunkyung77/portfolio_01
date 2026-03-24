@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>베이비앤토이</title>
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/common.css" type="text/css">
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $('.gnb>ul>li').hover(function(){
+        $(this).find('.sub_menu').stop().slideToggle()
+      })
+      $('.controls ul li').each(function(index){
+        $(this).click(function(){
+          $('.banner_img').animate({left:-index*100+'%'})
+          $('.top_text li').eq(index).fadeIn().siblings().fadeOut()
+          $(this).addClass('select').siblings().removeClass()
+        })
+      })
+    })
+
+  </script>
+
+</head>
+<body>
+  <header id="header">
+    <div class="header_inner">
+      <div class="header_top">
+        <div class="util_left">
+          <ul>
+            <li><a href="">자주묻는질문과답변</a></li>
+            <li><a href="">상품후기</a></li>
+            <li><a href="">상품문의</a></li>
+          </ul>
+        </div>
+        <div class="util_right">
+          <ul>
+            <li><a href="">로그인</a></li>
+            <li><a href="join_agree.html">회원가입</a></li>
+            <li><a href="">내정보</a></li>
+            <li><a href="cart.html">장바구니</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header_mid">
+      <div class="mid_inner">
+        
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="img/main_icon_color.png" alt="베이비앤토이">
+            </a>
+            <a href="index.html">베이비앤토이</a>
+          </h1>
+
+        <div class="header_search">
+          <input type="text" id="searchForm" name="keyword" class="search">
+          <a href=""><img src="img/search_icon.png" alt="검색"></a>
+        </div>
+      </div>
+    </div>
+    <nav class="gnb">
+      <ul>
+        <li><a href="product.html">연령별 분류</a>
+          <ul class="sub_menu">
+            <li><a href="product.html">전체보기</a></li>
+            <li><a href="product.html">0개월 이상</a></li>
+            <li><a href="product.html">5개월 이상</a></li>
+            <li><a href="product.html">11개월 이상</a></li>
+            <li><a href="product.html">15개월 이상</a></li>
+          </ul>
+        </li>
+        <li><a href="#">품목별 분류</a>
+          <ul class="sub_menu">
+            <li><a href="">전체보기</a></li>
+            <li><a href="">침대/바운서/스윙</a></li>
+            <li><a href="">쏘서/점퍼루/보행기</a></li>
+            <li><a href="">카시트/유모차/식탁의자</a></li>
+            <li><a href="">미끄럼/주방놀이/놀이집</a></li>
+            <li><a href="">자동차/그네/시소</a></li>
+            <li><a href="">묶음/패키지 상품</a></li>
+            <li><a href="">중고 장난감 판매</a></li>
+          </ul>
+        </li>
+        <li><a href="#">이용안내</a></li>
+        <li><a href="#">소통마당</a>
+          <ul class="sub_menu">
+            <li><a href="">공지사항</a></li>
+            <li><a href="">자주묻는 질문과 답변</a></li>
+            <li><a href="">상품문의</a></li>
+            <li><a href="">상품후기</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="top_banner">
+    <ul class="banner_img">
+      <li><img src="img/banner_01.jpg" alt=""></li>
+      <li><img src="img/banner_03.jpg" alt=""></li>
+      <li><img src="img/banner_02.jpg" alt=""></li>
+    </ul>
+    <div class="controls">
+      <ul>
+        <li class="select"><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </div>
+  </section>
+  <section id="new">
+    <h2>신상품</h2>
+    <div class="new_inner">
+      <div class="new_left">
+        <div class="new_l_text">
+          <h3>0개월 이상</h3>
+          <h4>신생아 흔들 의자 수면 요람 침대</h4>
+          <p>유아 바운서 걸이식 딸랑이 장난감 스윙 의자 라운지 안락 의자, 어린이 요람</p>
+          <p class="price">20,000원</p>
+        </div>
+        <div class="new_l_img">
+          <img src="img/new_main.jpg" alt="">
+        </div> <!--백그라운드 넣을지, 이미지 넣을지, 고민-->
+        <a href="product.html" class="more_btn com_btn">더보기</a>
+      </div>
+      <div class="new_right">
+        <div class="resize-square-handle"></div>
+        <ul>
+          <li>
+            <a href="product.html">
+              <div class="list_img">
+                <img src="img/new_sub1_5.jpg" alt="">
+              </div>
+              <div class="list_text">
+                <h3>5개월 이상</h3>
+                <h4>뽀로로 팡팡 뮤직홈 세트 돌 아기 장난감</h4>
+                <p>15,000원</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="product.html">
+              <div class="list_img">
+                <img src="img/new_sub2_5.jpg" alt="">
+              </div>
+              <div class="list_text">
+                <h3>5개월 이상</h3>
+                <h4>동물 도형 끼우기 원목 장난감</h4>
+                <p>15,000원</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="product.html">
+              <div class="list_img">
+                <img src="img/new_sub3_11.jpg" alt="">
+              </div>
+              <div class="list_text">
+                <h3>11개월 이상</h3>
+                <h4>걸음마 보조기 스마트 폴딩 한영</h4>
+                <p>16,000원</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="product.html">
+              <div class="list_img">
+                <img src="img/new_sub4_15.jpg" alt="">
+              </div>
+              <div class="list_text">
+                <h3>15개월 이상</h3>
+                <h4>놀이 하우스 바이올렛 3살아기장난감 실내용텐트</h4>
+                <p>25,000원</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="product.html">
+              <div class="list_img">
+                <img src="img/new_sub5_15.jpg" alt="">
+              </div>
+              <div class="list_text">
+                <h3>15개월 이상</h3>
+                <h4>호랑이 팝업 텐트 장난감</h4>
+                <p>25,000원</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="product.html">
+              <div class="list_img">
+                <img src="img/new_sub6_15.jpg" alt="">
+              </div>
+              <div class="list_text">
+                <h3 >15개월 이상</h3>
+                <h4>소근육발달 장난감 트럭 도형맞추기</h4>
+                <p>20,000원</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="best">
+    <div class="best_inner">
+      <div class="best_left">
+        <h2>연령별 베스트 상품<br>
+            한 눈에 보기</h2>
+        <p>연령별 베스트 상품을 눌러,<br>
+            카테고리를 한 번에 확인해보세요!</p>
+        <div class="best_btn">
+          <a href="" class="left_btn"><img src="img/left_btn.png" alt=""></a>
+          <a href="" class="left_btn"><img src="img/right_btn.png" alt=""></a>
+        </div>
+      </div>
+      <div class="best_right">
+        <ul>
+          <li>
+            <a href="product.html">
+              <div class="over_box">전체보기</div>
+              <!-- <img src="img/best_all.jpg" alt=""> -->
+              <h3>전체보기</h3>
+            </a>
+          </li>
+          <li>
+            <a href="product.html">
+              <img src="img/best0_0.jpg" alt="">
+              <h3>0개월 이상</h3>
+            </a>
+          </li>
+          <li>
+            <a href="product.html">
+              <img src="img/best1_5.jpg" alt="">
+              <h3>5개월 이상</h3>
+            </a>
+          </li>
+          <li>
+            <a href="product.html">
+              <img src="img/best2_11.jpg" alt="">
+              <h3>11개월 이상</h3>
+            </a>
+          </li>
+          <li>
+            <a href="product.html">
+              <img src="img/best3_15.jpg" alt="">
+              <h3>15개월 이상</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="orderWay">
+    <ul>
+      <li>
+        <h2>상품주문방법</h2>
+        <p>저희 베이비앤토이에서<br> 상품을 주문하는 방법은<br> 크게 6단계입니다.</p>
+      </li>
+      <li>
+        <p>1단계</p>
+        <img src="img/search_black.png" alt="상품검색">
+        <p>상품검색</p>
+      </li>
+      <li>
+        <p>2단계</p>
+        <img src="img/cart.png" alt="장바구니 담기">
+        <p>장바구니 담기</p>
+      </li>
+      <li>
+        <p>3단계</p>
+        <img src="img/contact_page.png" alt="회원 ID로그인 또는 비회원 주문">
+        <p>회원 ID로그인 또는 비회원 주문</p>
+      </li> 
+      <li>
+        <p>4단계</p>
+        <img src="img/assignment.png" alt="주문서 작성">
+        <p>주문서 작성</p>
+      </li>
+      <li>
+        <p>5단계</p>
+        <img src="img/card.png" alt="결재방법 선택 및 결재">
+        <p>결제방법 선택 및 결제</p>
+      </li>
+      <li>
+        <p>6단계</p>
+        <img src="img/check.png" alt="주문성공화면">
+        <p>주문성공화면(주문번호)</p>
+      </li>
+      <li>
+        <p><span class="line">비회원 주문</span>인 경우, 6단계에서 <br><span class="line point_color">주문번호</span>와 <span class="line"><span class="point_color">승인번호</span>(카드결제시)</span>를 꼭 메모해 두시기 바랍니다.</p>
+        <p><span class="line">단, 회원인 경우</span> 자동 저장되므로 따로 관리하실 필요가 없습니다.</p>
+      </li>
+    </ul>
+  </section>
+  <section id="alter">
+    <h2>주문전 꼭! 확인해주세요</h2>
+    <div class="alter_inner">
+      <div class="direct">
+        <p>직접 배송 지역</p>
+        <p>· 수원시 전지역 <br>
+          · 화성시(동탄, 병점, 봉담), 오산시 <br>
+          · 수지, 기흥, 분당 <br>
+          · 의왕, 안산, 군포, 안양, 과천</p>
+        <p>*주문금액 25,000원 미만시 배송료 5,000원 추가</p>
+      </div>
+      <div class="etc">
+        <p>기타 배송 지역</p>
+        <p>· 시흥, 광명, 서울 서초구</p>
+        <p>*주문금액 30,000원 이상 가능*<br>
+          *지역별 추가 배송비 있음*</p>
+      </div>
+    </div>
+  </section>
+  <section id="comment">
+    <div class="com_top">
+      <h2>생생한 고객 사용 후기</h2>
+      <a href="" class="all_btn">전체보기 +</a>
+    </div>
+    <div class="com_list">
+      <ul>
+        <li>
+          <a href="">
+            <div class="com_img">
+              <img src="img/comment0.jpg" alt=""><!--후기 이미지-->
+            </div>
+            <div class="com_text">
+              <h4>잘 놀았습니다~</h4>
+              <div class="info_img">
+                <img src="img/star.png" alt="별점">
+              </div>
+              <p class="com_info">조카가 엄청 좋아했어요. 상태도 깨끗하구요 음울림이 좋네요~ 어른인 제가 봐도재밌는 장난감 같습니다~~^^ 배송도 빨리 도착하고 좋았어요~</p>
+              <div class="cal_id">
+                <p>2023-03-28</p>
+                <p>a***</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="com_img">
+              <img src="img/comment1.jpg" alt=""><!--후기 이미지-->
+            </div>
+            <div class="com_text">
+              <h4>배송이 빨라서 좋아요</h4>
+              <div class="info_img">
+                <img src="img/star.png" alt="별점">
+              </div>
+              <p class="com_info">배송&설치도 희망일에 잘 해주셨고, 신속하고 친절하게 해주셔서 감사합니다.^^침대 상태도 깨끗하고 너무 좋네요~시기별로 빌려서 사용하다가 반납할 수 있어서 좋아요!</p>
+              <div class="cal_id">
+                <p>2023-03-28</p>
+                <p>b***</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="com_img">
+              <img src="img/comment2.jpg" alt=""><!--후기 이미지-->
+            </div>
+            <div class="com_text">
+              <h4>배송, 설치, 상태 전부다 마음에 ...</h4>
+              <div class="info_img">
+                <img src="img/star.png" alt="별점">
+              </div>
+              <p class="com_info">수원 인근에 사시는 분은 대여하셔도 괜찮으실거같습니다. 건전지 장착되어 있고요, 직접 배송해주세요~ 상태도 깔끔하고 아주 좋네요. 자주 사용할 거 같아요~</p>
+              <div class="cal_id">
+                <p>2023-03-28</p>
+                <p>c***</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="com_img">
+              <img src="img/comment3.jpg" alt=""><!--후기 이미지-->
+            </div>
+            <div class="com_text">
+              <h4>잘 놀았습니다~</h4>
+              <div class="info_img">
+                <img src="img/star.png" alt="별점">
+              </div>
+              <p class="com_info">잘 갖고 놀았습니다. 아이가 쉽게 질려해서 구매하기 고민이 많았는데,대여하는 곳이 있어서 반가웠어요^^ 아마 계속해서 대여해서 사용하지 않을까 싶어요^^</p>
+              <div class="cal_id">
+                <p>2023-03-28</p>
+                <p>d***</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="com_img">
+              <img src="img/comment4.jpg" alt=""><!--후기 이미지-->
+            </div>
+            <div class="com_text">
+              <h4>애기가 너무 재밌게 노네요^^!</h4>
+              <div class="info_img">
+                <img src="img/star.png" alt="별점">
+              </div>
+              <p class="com_info">아이가 놀기에 장난감 상태도 깨끗하구요 튼튼하고 좋네요~ 처음 대여해 보는 거라 살짝 걱정했었는데 정말 좋은 거 같습니다~~^^ 배송도 빨리 도착하고 좋았어요~</p>
+              <div class="cal_id">
+                <p>2023-03-28</p>
+                <p>e***</p>
+              </div>
+            </div>
+          </a>
+        </li>       
+      </ul>
+    </div>
+    <div class="com_btn">
+      <a href="" class="com_left">
+        <img src="img/🦆 icon _chevron left_.png" alt="">
+      </a>
+      <a href="" class="com_right">
+        <img src="img/🦆 icon _chevron right_.png" alt="">
+      </a>
+    </div>
+  </section>
+  <section id="top_btn">
+    <a href="#header"><img src="img/top_btn.png" alt=""></a>
+  </section>
+  <footer id="footer">
+    <nav class="fnb">
+      <ul>
+        <li><a href="">회사소개</a></li>
+        <li><a href="">이용약관</a></li>
+        <li><a href="">개인정보처리방침</a></li>
+        <li><a href="">이용안내</a></li>
+      </ul>
+    </nav>
+    <div class="foot_inner">
+      <address><pre>
+상호 : 장안장난감대여점          대표 : 한상임          사업자등록번호 : 135-04-86296
+통신판매업신고번호 : 2010-경기수원-0412호       <a href="">[사업자정보확인]</a>
+대표번호 : 031-245-6468        이메일 : dkidi@naver.com
+주소 : 경기도 수원시 장안구 경수대로847번길 8 삼원빌딩 지하
+개인정보관리자 : 모철홀
+호스팅제공 : 엔에이치엔고도(주)</pre>
+        <p>copyright ⓒ www.babyntoy.com all rights reserved.</p>
+      </address>
+      <div class="call">
+        <h3>고객센터</h3>
+        <p>031.245.6468</p>
+      </div>
+      <div class="bank">
+        <p>입금계좌안내</p>
+        <p>우리은행 452-011410-12-101</p>
+        <p>예금주 : 한상임</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
